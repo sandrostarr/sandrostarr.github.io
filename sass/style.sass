@@ -1,0 +1,154 @@
+$main_color: #eba56c
+	
+*
+	font-family: 'Open Sans', sans-serif
+
+.header
+	height: 120px
+	&_logo
+		display: block
+		margin-top: 30px
+		font-size: 40px
+		font-weight: 800
+		color: $main_color
+	img
+		max-width: 100%
+	&_search
+		height: 36px
+		width: 100%
+		margin-top: 43px
+		padding: 0 22px
+		border-radius: 8px
+		border: 0.1px solid #cecece
+		font-size: 14px
+		&_icon
+			position: absolute
+			bottom: 49px
+			right: 28px
+
+.menu
+	display: flex
+	justify-content: space-around
+	padding: 48px 0
+	margin: 0
+	list-style-type: none
+	&_link
+		color: #343434
+		font-size: 12px
+		font-weight: 600
+		text-transform: uppercase
+
+.subheader
+	height: 50px
+	padding: 12px 0
+	background-color: $main_color
+	&_geoposition_city
+		color: #ffffff
+		font-size: 14px
+	&_subscribe_link
+		color: #ffffff
+		font-size: 14px
+		text-decoration: underline
+	&_socials
+		&_list
+			display: flex
+			justify-content: flex-end
+			list-style-type: none
+		&_item
+			margin-left: 10px
+	a
+		color: #ffffff
+		img
+			max-width: 28px
+
+.news
+	padding: 45px 0 45px 0
+	&_block
+		display: inline-block
+		height: 21px
+		width: 6px
+		background-color: $main_color
+		margin: 13px 5px 0 0
+	h2
+		display: inline-block
+		font-size: 30px
+		color: #343434
+		font-weight: 800
+	.row
+		margin-top: 11px
+	a
+		display: block
+		text-decoration: none
+		width: 100%
+		height: 100%
+	&_item
+		width: 350px
+		height: 560px
+		position: relative
+		margin-bottom: 20px
+		padding: 325px 30px 0
+		overflow: hidden
+		transition: 0.5s all
+		&::before
+			content: ''
+			display: block
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			background: rgba(0,0,0,0.5)
+			transition: 0.5s all
+		&::after 
+			content: ""
+			width: 100%
+			height: 120px
+			position: absolute
+			bottom: 0
+			left: 0
+			background: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1))
+		&:hover
+			padding-top: 60px
+			transition: 0.5s all
+			&:before
+				background-color: rgba(0,0,0,0.8)
+				transition: 0.5s all
+		&_1
+			width: 730px
+			background: url('../img/beer-3293692_960_720.jpg') center (center / cover) no-repeat
+			&:hover
+				padding-top: 150px
+		&_2
+			background: url('../img/whiskey-315178_960_720.jpg') center (center / cover) no-repeat
+		&_3
+			background: url('../img/barrel-534392_960_720.jpg') center (center / cover) no-repeat
+		&_4
+			background: url('../img/beer-3786988_960_720.jpg') center (center / cover) no-repeat
+		&_5
+			background: url('../img/food-3147953_960_720.jpg') center (center / cover) no-repeat
+		&_date
+			position: relative
+			font-size: 14px
+			color: $main_color
+		&_subtitle
+			margin-top: 12px
+			position: relative
+			font-size: 24px
+			font-weight: 600
+			color: #ffffff
+			line-height: 28px
+		&_article
+			margin-top: 12px
+			position: relative
+			font-size: 14px
+			color: #ffffff
+			line-height: 17px
+		&_line
+			position: absolute
+			height: 3px
+			width: 50px
+			background-color: #adadad
+			z-index: 1
+			border-radius: 5px
+			bottom: 8px
+			left: calc( 50% - 25px)
