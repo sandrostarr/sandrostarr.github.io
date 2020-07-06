@@ -1,0 +1,72 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+.header {
+    height: 120px;
+}
+.header .header_logo {
+    display: block;
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 800;
+    color: #eba56c;
+}
+.header .header_logo img {
+    max-width: 100%;
+}
+.header .header_search {
+    height: 36px;
+    width: 100%;
+    margin-top: 43px;
+    padding: 0 22px;
+    border-radius: 8px;
+    border: 0.1px solid #cecece;
+    font-size: 14px;
+}
+
+.header .header_search_icon {
+    position: absolute;
+    bottom: 49px;
+    right: 28px;
+}
+.menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 48px 0;
+    margin: 0;
+    list-style-type: none;
+}
+.menu .menu_link {
+    color: #343434;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.subheader {
+    height: 50px;
+    padding: 12px 0;
+    background-color: #eba56c;
+}
+.subheader_geoposition_city {
+    color: #ffffff;
+    font-size: 14px;
+}
+.subheader_subscribe_link {
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: underline;
+}
+.subheader .subheader_socials_list {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+}
+.subheader .subheader_socials_item {
+    margin-left: 10px;
+}
+.subheader .subheader_socials_item a {
+    color: #ffffff;
+}
+.subheader .subheader_socials_item a img {
+    max-width: 28px;
+}
